@@ -11,6 +11,7 @@ function driverNamesWithRevenueOver(drivers, revenue) {
 function exactMatch(drivers, nameObject) {
   return drivers.filter((driver) => {
   let matched = false; //set as false
+  debugger;
     for (const key in driver) {
      //evaluate if driver[key === nameObject[key], save it to local variable matched
      if (driver[key] === nameObject[key]) {
